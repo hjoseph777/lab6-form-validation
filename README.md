@@ -3,6 +3,7 @@
 A responsive, interactive form built with Next.js and TypeScript featuring real-time validation, visual feedback, and a modern UI design.
 
 ![Form Screenshot](image/screenshot1.png)
+![Form Screenshot](./image/screenshot1.png)
 
 ## Project Overview
 
