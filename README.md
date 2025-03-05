@@ -4,7 +4,7 @@ A responsive, interactive form built with Next.js and TypeScript featuring real-
 
 ![Form Screenshot](image/screenshot1.png)
 
-![Form Screenshot](/image/screenshot1.png)
+![Form Screenshot](image/Screenshot1.png)
 
 
 ## Project Overview
