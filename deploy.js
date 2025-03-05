@@ -12,7 +12,7 @@ const colors = {
   red: '\x1b[31m'
 };
 
-console.log(`${colors.bright}${colors.cyan}Starting deployment to GitHub Pages...${colors.reset}`);
+console.log(`${colors.bright}${colors.cyan}Starting deployment to GitHub Pages from main branch...${colors.reset}`);
 
 try {
   // Step 1: Build the Next.js application
@@ -27,8 +27,8 @@ try {
   console.log(`${colors.green}Created .nojekyll file${colors.reset}`);
   
   // Step 3: Deploy to GitHub Pages using gh-pages
-  console.log(`\n${colors.yellow}Step 3: Deploying to GitHub Pages${colors.reset}`);
-  execSync('npx gh-pages -d out --dotfiles', { stdio: 'inherit' });
+  console.log(`\n${colors.yellow}Step 3: Deploying from main branch to gh-pages branch${colors.reset}`);
+  execSync('npx gh-pages -d out --dotfiles -b gh-pages -o origin', { stdio: 'inherit' });
   
   console.log(`\n${colors.bright}${colors.green}✓ Deployment completed successfully!${colors.reset}`);
   console.log(`${colors.cyan}Your site should be available at: ${colors.bright}https://hjoseph777.github.io/lab6-form-validation/${colors.reset}`);

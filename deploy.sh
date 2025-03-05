@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Starting deployment to GitHub Pages..."
+echo "Starting deployment to GitHub Pages from main branch..."
 
 # Build the Next.js application
 echo "Building the application..."
@@ -10,8 +10,9 @@ echo "Adding .nojekyll file..."
 touch out/.nojekyll
 
 # Deploy to GitHub Pages using gh-pages
-echo "Deploying to GitHub Pages..."
-npx gh-pages -d out --dotfiles
+echo "Deploying from main branch to gh-pages branch..."
+# The gh-pages package automatically uses the current branch (main) as source
+npx gh-pages -d out --dotfiles -b gh-pages -o origin
 
 echo "Deployment completed successfully!"
 echo "Your site should be available at: https://hjoseph777.github.io/lab6-form-validation/"
