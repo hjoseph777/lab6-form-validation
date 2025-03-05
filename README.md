@@ -1,5 +1,5 @@
 # Form Validation Project 
-## [Url link Click main page](https://hjoseph777.github.io/lab6-form-validation/)
+## [Click Load Main Form](https://hjoseph777.github.io/lab6-form-validation/)
 
 A responsive, interactive form built with Next.js and TypeScript featuring real-time validation, visual feedback, and a modern UI design.
 
